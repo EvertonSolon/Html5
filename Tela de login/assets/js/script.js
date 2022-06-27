@@ -4,24 +4,22 @@
 // console.log('O e-mail é: ' + email)
 // console.log(`O e-mail é: ${email} <- utilizando template string`)
 
-document.getElementById('btn-submit').addEventListener('click', e => {
+//document.getElementById('btn-submit').addEventListener('click', e => {
 
     //console.log('O botão foi clicado!');
-});
+//});
 
-document.getElementById('form-login').addEventListener('mouseenter', e => {
+//document.getElementById('form-login').addEventListener('mouseenter', e => {
 
     // console.log('O mouse está sobre o formulário!');
-
-
-});
+//});
 
 document.querySelector('#form-login').addEventListener('mouseleave', e => {
 
     //console.log('O mouse está fora do formulário!');
 });
 
-document.querySelector('#form-login').addEventListener('submit', e => {
+//document.querySelector('#form-login').addEventListener('submit', e => {
 
     // e.preventDefault();
     
@@ -31,7 +29,7 @@ document.querySelector('#form-login').addEventListener('submit', e => {
     // console.log(email, password);
 
 
-});
+//});
 
 
 document.getElementById('form-login').addEventListener('mouseleave', e => {
@@ -72,6 +70,25 @@ document.getElementById('form-login').addEventListener('mouseleave', e => {
 
     let jsonParse = JSON.parse(stringJson);
 
-    console.log(jsonParse);
+    //console.log(jsonParse);
+
+    // Validando os dados
+    // if(json.email !== "") {
+    //     console.log('O campo foi preenchido!');
+    // }
+    
+    // Valida se NÃO existe valor
+    if(!json.email) {
+        console.error("O campo deve ser preenchido!");
+        return;
+    } else if (!json.password) {
+        console.error("O campo password deve ser preenchido!")
+        return;
+    }
+
+    console.info("Dados validados com sucesso!");
+    
+
+
 
 });
