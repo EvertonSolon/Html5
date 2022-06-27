@@ -21,8 +21,19 @@
         </section>
 
         <main>
-            <h1>Título da página</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex inventore fuga fugiat id labore ea laudantium aperiam vitae harum, repellat dicta cupiditate. Voluptate quis ad dolor culpa deleniti facere illo.</p>
+            <!-- Caso o texto da página seja um artigo. Senão, usar a tag apropriada. -->
+            <article>
+                <!-- Podem existir mais de uma tag header por página desde que cada uma esteja
+                no seu devido contexto. -->
+                <header>
+                    <!-- A tag h1 só pode existir uma única vez por página. -->
+                    <h1>Título do artigo/página</h1>
+                </header>
+                
+                <!-- O parágrafo deve sempre fazer parte do corpo e não do header -->
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex inventore fuga fugiat id labore ea laudantium aperiam vitae harum, repellat dicta cupiditate. Voluptate quis ad dolor culpa deleniti facere illo.</p>                
+
+            </article>
         </main>
 
         <footer>

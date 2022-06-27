@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+
+<html lang="en"> <!-- Tag raiz -->
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tag Nav</title>
+    
+        <!-- Aqui vão as referências aos arquivos css -->
+        <style>
+            body {
+                margin: 0;
+            }
+            header, footer {
+                height: 10vh;
+                background-color: #ccc;
+            }
+            section {
+                display: flex;
+                flex-direction: row;
+            }
+            main {
+                height: 80vh;
+                background-color: #999;
+                flex: 1;
+            }
+            aside {
+                height: 80vh;
+                background-color: gold;
+                width: 20vw;
+            }
+            ul {
+                margin: 0;
+            }
+
+
+        </style>
+    </head>
+    
+    <body>
+        <header>
+            <nav>
+                <a href="#">Home</a> 
+                <a href="#">Categorias</a> 
+                <a href="#">Contato</a> 
+
+        </header>
+
+        <section>
+            <!-- Barra lateral -->
+            <aside>
+                <nav>
+                    <ul>
+                        <li> <a href="#"> Home </a></li>
+                        <li> <a href="#">Categorias </a></li>
+                        <li> <a href="#">Loja Virtual</a></li>
+                        <li> <a href="#">Contato</a></li>
+                    </ul>
+                </nav>
+                
+                <article>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae neque corrupti rem dolorem, tempora perspiciatis laborum, excepturi quia id voluptatibus sequi quam consequatur aperiam mollitia nam dolorum debitis ea? Aperiam.</p>
+
+                    <!-- A tag address pode exitir mais de 1x na página. Tudo vai depender do contexto. -->
+                    <address>
+                        <!-- Não deve usar a tag p aqui -->
+                        Nome do autor do artigo <br>
+                        Acess <a href="#">Url do autor</a><br>
+                        Endereço do autor, nro 123<br>
+                        Bairro - Cidade - UF<br>
+                        CEP: 12345-678
+                    </address>
+
+
+                </article>
+            </aside>
+
+            <main>
+                <h1>Título da página</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex inventore fuga fugiat id labore ea laudantium aperiam vitae harum, repellat dicta cupiditate. Voluptate quis ad dolor culpa deleniti facere illo.</p>
+            </main>
+
+        </section>
+
+        <!-- Antes de usar uma tag section, avaliar se já existe alguma tag do HTML5 que seja mais específica
+        para o conteúdo da página. -->
+        <section></section>
+
+        <footer>
+            <nav>
+                <ul>
+                    <li> <a href="#"> Política de privacidade </a></li>
+                    <li> <a href="#">Termos de uso </a></li>
+                    <li> <a href="#">Contato</a></li>
+                    
+                </ul>
+            </nav>
+
+            <!-- A tag address pode exitir mais de 1x na página. Tudo vai depender do contexto. -->
+            <address>
+                <!-- Não deve usar a tag p aqui -->
+                Nome da empresa <br>
+                Acess <a href="#">Url da empresa</a><br>
+                Endereço da empresa, nro 123<br>
+                Bairro - Cidade - UF<br>
+                CEP: 12345-678
+            </address>
+
+            <p>Todos os direitos reservaods</p>
+        </footer>
+
+        <!-- Aqui vão as referências aos arquivos js -->
+    </body>
+</html>
