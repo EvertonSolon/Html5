@@ -7,6 +7,10 @@
 body {
     margin: 0;
     padding: 0;
+    min-height: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column; 
 }
 
 header {
@@ -134,7 +138,9 @@ header #logo {
 footer {
     background: #F5F5F5;
     color: #6c757d;
-    font-size: .8em
+    font-size: .8em;
+    margin-top: auto; 
+    min-height: 50px;
 }
 
 footer p {
